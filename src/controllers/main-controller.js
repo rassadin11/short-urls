@@ -1,6 +1,6 @@
 import { nanoid } from 'nanoid';
 import validUrl from 'valid-url';
-import { findByOriginalUrl, findByShortId, createLink, incrementClicks, removeLink, printAllLinks } from '../models/linkModel.js';
+import { findByOriginalUrl, findByShortId, createLink, incrementClicks, removeLink, printAllLinks } from '../models/link-models.js';
 import { parseJsonBody } from '../utils.js'
 
 export const minifyUrl = async (req, res) => {

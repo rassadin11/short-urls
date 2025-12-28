@@ -1,9 +1,6 @@
-import { minifyUrl, redirect } from "../controllers/linkController.js";
-import { home } from "../controllers/static.js";
+import { minifyUrl, redirect } from "../controllers/main-controller.js";
 
 export const routes = {
-    '/': home,
     '/api/minify': minifyUrl,
     '/:shortId': redirect,
-    // '/favicon.ico': favicon,
 }
